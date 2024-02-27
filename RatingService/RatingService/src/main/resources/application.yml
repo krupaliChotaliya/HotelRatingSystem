@@ -1,0 +1,9 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb+srv://krupalichotaliya9:hOd1GcljbRFdd83U@cluster0.oghims0.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+      database: Rating-microService
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+server:
+  port: 8083
