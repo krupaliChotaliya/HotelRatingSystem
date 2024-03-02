@@ -6,6 +6,9 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Entity
 @Table(name="micro_user")
 @Setter
@@ -23,6 +26,8 @@ public class User {
     @Column(name = "name")
     private String name;
 
-//    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
-//    private List<Rating> ratings;
+    @Transient
+    private List<Rating> ratings=new ArrayList<>();
+
+
 }

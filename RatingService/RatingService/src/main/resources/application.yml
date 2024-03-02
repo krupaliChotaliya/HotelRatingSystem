@@ -1,4 +1,6 @@
 spring:
+  application:
+    name: Rating-service
   data:
     mongodb:
       uri: mongodb+srv://krupalichotaliya9:hOd1GcljbRFdd83U@cluster0.oghims0.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
@@ -7,3 +9,11 @@ spring:
     exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
 server:
   port: 8083
+  
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
+  instance:
+    preferIpAddress: true
