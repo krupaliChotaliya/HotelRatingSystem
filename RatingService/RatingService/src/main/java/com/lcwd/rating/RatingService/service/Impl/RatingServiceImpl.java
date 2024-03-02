@@ -5,6 +5,7 @@ import com.lcwd.rating.RatingService.repository.RatingRepository;
 import com.lcwd.rating.RatingService.service.RatingService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
 
 import java.util.List;
 import java.util.UUID;
@@ -14,6 +15,9 @@ public class RatingServiceImpl implements RatingService {
 
     @Autowired
     private RatingRepository ratingRepository;
+
+    @Autowired
+    private RestTemplate restTemplate;
     @Override
     public Rating saveRating(Rating rating) {
         rating.setRatingId(UUID.randomUUID().toString());
