@@ -4,9 +4,9 @@ HotelRatingSystem
 
 The HotelRatingSystem is a microservices-based system consisting of three main microservices:
 
-UserService: Manages user-related operations.
-HotelService: Provides hotel information and details.
-RatingService: Handles rating-related functionalities for hotels.
+UserService: Manages user-related operations using MySQL.
+HotelService: Provides hotel information and details using PostgreSQL.
+RatingService: Handles rating-related functionalities for hotels using MongoDB.
 Additionally, the system utilizes an API Gateway and a Config Server to streamline communication and manage common configurations across microservices.
 
 Microservices Overview:
