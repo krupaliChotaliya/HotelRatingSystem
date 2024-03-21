@@ -40,7 +40,7 @@ Clone Repository:
 
 bash
 Copy code
-git clone https://github.com/your-repo/HotelRatingSystem.git
+git clone https://github.com/krupaliChotaliya/HotelRatingSystem
 Setup Config Server:
 
 Configure the Config Server to fetch configurations from your preferred source (e.g., Git repository).
